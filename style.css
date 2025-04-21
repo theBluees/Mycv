@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Untuk engatur box model agar padding dan border termasuk dalam ukuran elemen */
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif; /* Font utama untuk seluruh halaman */
+    line-height: 1.6; /* Jarak antar baris */
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9; /* Warna latar belakang */
+    color: #333; /* Warna teks utama */
+}
+
+/* Header */
+header {
+    text-align: center; /* Teks di tengah */
+    padding: 30px 20px; /* Ruang di dalam header */
+    background: linear-gradient(135deg, #0b3d91, #1e90ff); /* Gradasi warna biru */
+    color: white; /* Warna teks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek modern */
+}
+
+header h1 {
+    font-size: 2.8em; /* Ukuran font besar untuk judul */
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Font khusus untuk judul */
+}
+
+header p {
+    font-size: 1.2em; /* Ukuran font deskripsi */
+    margin: 10px 0 0; /* Jarak atas dan bawah */
+    font-style: italic; /* Gaya font miring */
+}
+
+/* Navigasi */
+nav {
+    position: relative;
+    background: #333;
+    padding: 15px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background: #1e90ff;
+    color: white;
+}
+
+/* Burger menu */
+.menu-toggle {
+    display: none; /* Sembunyikan checkbox */
+}
+
+.menu-icon {
+    display: none; /* Sembunyikan ikon burger secara default */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* Section */
+section {
+    padding: 30px; /* Ruang di dalam section */
+    margin: 20px auto; /* Jarak atas dan bawah, serta rata tengah */
+    max-width: 900px; /* Lebar maksimum section */
+    background: white; /* Warna latar belakang */
+    border-radius: 15px; /* Membuat sudut melengkung */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek modern */
+}
+
+section h2 {
+    text-align: center; /* Membuat judul berada di tengah */
+    font-size: 2em; /* Ukuran font judul */
+    margin-bottom: 20px; /* Jarak bawah untuk estetika */
+    color: #0b3d91; /* Warna biru untuk konsistensi */
+}
+
+/* Profile Picture */
+.profile-pic {
+    display: block; /* Membuat gambar menjadi elemen blok */
+    margin: 0 auto 20px; /* Rata tengah dengan jarak bawah */
+    width: 180px; /* Lebar gambar */
+    height: 180px; /* Tinggi gambar */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    border: 4px solid #0b3d91; /* Bingkai biru */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+/* Projects */
+.projects-container {
+    display: flex; /* Menyusun elemen secara horizontal */
+    flex-wrap: wrap; /* Membungkus elemen jika ruang tidak cukup */
+    gap: 25px; /* Jarak antar elemen */
+    justify-content: center; /* Menempatkan elemen di tengah */
+}
+
+.project-card {
+    background: #eef3fb; /* Warna latar belakang kartu */
+    padding: 20px; /* Ruang di dalam kartu */
+    border-radius: 12px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek modern */
+    width: 320px; /* Lebar kartu */
+    text-align: center; /* Teks di tengah */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Menggeser kartu ke atas saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar saat hover */
+}
+
+.project-image {
+    width: 100%; /* Gambar memenuhi lebar kartu */
+    height: auto; /* Tinggi otomatis sesuai proporsi */
+    border-radius: 8px; /* Membuat sudut melengkung */
+    margin-bottom: 15px; /* Jarak bawah gambar */
+}
+
+/* Contact */
+.contact-container {
+    display: flex; /* Menyusun elemen secara horizontal */
+    flex-wrap: wrap; /* Membungkus elemen jika ruang tidak cukup */
+    gap: 25px; /* Jarak antar elemen */
+    justify-content: center; /* Menempatkan elemen di tengah */
+}
+
+.contact-item {
+    display: flex; /* Menyusun elemen secara vertikal */
+    flex-direction: column; /* Teks di bawah ikon */
+    align-items: center; /* Menyelaraskan elemen di tengah */
+    text-align: center; /* Teks di tengah */
+    background: #eef3fb; /* Warna latar belakang kartu kontak */
+    padding: 15px; /* Ruang di dalam kartu */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek modern */
+    width: 150px; /* Lebar kartu kontak */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
+}
+
+.contact-item:hover {
+    transform: translateY(-5px); /* Menggeser kartu ke atas saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar saat hover */
+}
+
+.contact-icon {
+    width: 60px; /* Ukuran ikon */
+    height: 60px; /* Tinggi ikon */
+    margin-bottom: 10px; /* Jarak bawah ikon */
+}
+
+.contact-item p {
+    margin: 0; /* Menghilangkan margin default */
+    font-size: 1em; /* Ukuran font teks kontak */
+    color: #333; /* Warna teks */
+    font-weight: bold; /* Teks tebal */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Teks di tengah */
+    padding: 15px; /* Ruang di dalam footer */
+    background: #333; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+    margin-top: 30px; /* Jarak atas footer */
+}
+
+/* Responsif untuk mode mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    .nav-links {
+        display: none; /* Sembunyikan menu */
+        flex-direction: column; /* Navigasi vertikal pada layar kecil */
+        gap: 15px; /* Jarak antar tautan */
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex; /* Tampilkan menu saat checkbox aktif */
+    }
+
+    .menu-icon {
+        display: flex; /* Tampilkan ikon burger */
+    }
+
+    section {
+        padding: 20px; /* Padding lebih kecil untuk layar kecil */
+    }
+
+    .projects-container {
+        flex-direction: column; /* Proyek ditampilkan secara vertikal */
+        gap: 20px; /* Jarak antar proyek */
+    }
+
+    .contact-container {
+        flex-direction: column; /* Susun elemen secara vertikal */
+        gap: 15px; /* Jarak antar elemen */
+        align-items: center; /* Pusatkan elemen */
+    }
+
+    .contact-item {
+        width: 100%; /* Lebar penuh untuk elemen kontak */
+        max-width: 300px; /* Lebar maksimum untuk elemen kontak */
+        text-align: center; /* Teks tetap di tengah */
+    }
+
+    .contact-icon {
+        width: 50px; /* Ukuran ikon lebih kecil untuk layar kecil */
+        height: 50px;
+        margin-bottom: 10px; /* Jarak antara ikon dan teks */
+    }
+
+    .contact-item p {
+        font-size: 1em; /* Ukuran font tetap proporsional */
+    }
+
+    .contact-container {
+        flex-direction: column; /* Kontak ditampilkan secara vertikal */
+        gap: 20px; /* Jarak antar kontak */
+    }
+}
