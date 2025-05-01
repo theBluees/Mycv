@@ -1,275 +1,331 @@
 /* Mengatur margin, padding, dan box model untuk semua elemen */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  box-sizing: border-box; /* Memastikan padding tidak memengaruhi ukuran elemen */
 }
 
 /* Mengatur gaya dasar untuk halaman */
 body {
-    font-family: 'Arial', sans-serif; /* Jenis font utama */
-    line-height: 1.6; /* Jarak antar baris teks */
-    margin: 0;
-    padding: 0;
-    background: #ffffff; /* Warna latar belakang putih */
-    color: #333; /* Warna teks utama */
+  font-family: "Arial", sans-serif; /* Jenis font utama */
+  line-height: 1.6; /* Jarak antar baris teks */
+  margin: 0;
+  padding: 0;
+  background: #ffffff; /* Warna latar belakang putih */
+  color: #333; /* Warna teks utama */
 }
 
 /* Bagian header di atas halaman */
 header {
-    text-align: center; /* Teks berada di tengah */
-    padding: 30px 20px; /* Ruang di dalam header */
-    background: linear-gradient(135deg, #00ffff, #ff1493); /* Gradasi warna biru ke pink */
-    color: white; /* Warna teks putih */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  text-align: center; /* Teks berada di tengah */
+  padding: 30px 20px; /* Ruang di dalam header */
+  background: linear-gradient(
+    135deg,
+    #00ffff,
+    #ff1493
+  ); /* Gradasi warna biru ke pink */
+  color: white; /* Warna teks putih */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
 }
 
 header h1 {
-    font-size: 2.8em; /* Ukuran teks besar untuk judul */
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+  font-size: 2.8em; /* Ukuran teks besar untuk judul */
+  margin: 0; /* Menghapus margin default */
 }
 
 header p {
-    font-size: 1.2em; /* Ukuran teks deskripsi */
-    margin: 10px 0 0; /* Jarak atas dan bawah */
-    font-style: italic; /* Teks miring */
+  font-size: 1.2em; /* Ukuran teks deskripsi */
+  margin: 10px 0 0; /* Jarak atas dan bawah */
+  font-style: italic; /* Teks miring */
 }
 
 /* Bagian navigasi (menu) */
 nav {
-    background: linear-gradient(135deg, #00ffff, #ff1493); /* Gradasi warna biru ke pink */
-    padding: 15px 20px; /* Ruang di dalam navigasi */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
-    position: sticky; /* Navigasi tetap di atas saat di-scroll */
-    top: 0;
-    z-index: 1000; /* Navigasi berada di atas elemen lain */
+  background: linear-gradient(
+    135deg,
+    #00ffff,
+    #ff1493
+  ); /* Gradasi warna biru ke pink */
+  padding: 15px 20px; /* Ruang di dalam navigasi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  position: sticky; /* Navigasi tetap di atas saat di-scroll */
+  top: 0; /* Posisi di bagian atas halaman */
+  z-index: 1000; /* Navigasi berada di atas elemen lain */
 }
 
 /* Daftar tautan di navigasi */
 .nav-links {
-    list-style: none; /* Menghilangkan bullet pada daftar */
-    display: flex; /* Menyusun elemen secara horizontal */
-    justify-content: center; /* Menempatkan elemen di tengah */
-    gap: 25px; /* Jarak antar elemen */
-    margin: 0;
-    padding: 0;
+  list-style: none; /* Menghilangkan bullet pada daftar */
+  display: flex; /* Menyusun elemen secara horizontal */
+  justify-content: center; /* Menempatkan elemen di tengah */
+  gap: 25px; /* Jarak antar elemen */
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-    display: inline; /* Menyusun elemen dalam satu baris */
+  display: inline; /* Menyusun elemen dalam satu baris */
 }
 
 .nav-links a {
-    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
-    color: white; /* Warna teks putih */
-    font-size: 1.2em; /* Ukuran teks tautan */
-    padding: 8px 15px; /* Ruang di dalam tautan */
-    border-radius: 5px; /* Membuat sudut melengkung */
-    transition: background 0.3s, color 0.3s; /* Animasi saat hover */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  color: white; /* Warna teks putih */
+  font-size: 1.2em; /* Ukuran teks tautan */
+  padding: 8px 15px; /* Ruang di dalam tautan */
+  border-radius: 5px; /* Membuat sudut melengkung */
+  transition: background 0.3s, color 0.3s; /* Animasi saat hover */
 }
 
 .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Warna latar saat hover */
-    color: #fff; /* Warna teks tetap putih saat hover */
+  background: rgba(255, 255, 255, 0.2); /* Warna latar saat hover */
+  color: #fff; /* Warna teks tetap putih saat hover */
 }
 
 /* Tombol menu untuk mode mobile */
 .menu-toggle {
-    display: none; /* Sembunyikan tombol menu */
+  display: none; /* Sembunyikan tombol menu */
 }
 
 /* Ikon burger menu untuk mode mobile */
 .menu-icon {
-    display: none; /* Sembunyikan ikon burger secara default */
-    cursor: pointer; /* Ubah kursor menjadi pointer */
-    flex-direction: column; /* Susun garis burger secara vertikal */
-    gap: 5px; /* Jarak antar garis */
+  display: none; /* Sembunyikan ikon burger secara default */
+  cursor: pointer; /* Ubah kursor menjadi pointer */
+  flex-direction: column; /* Susun garis burger secara vertikal */
+  gap: 5px; /* Jarak antar garis */
 }
 
 .menu-icon span {
-    display: block; /* Garis burger */
-    width: 30px; /* Lebar garis */
-    height: 3px; /* Tinggi garis */
-    background: white; /* Warna garis putih */
-    border-radius: 2px; /* Membuat garis sedikit melengkung */
+  display: block; /* Garis burger */
+  width: 30px; /* Lebar garis */
+  height: 3px; /* Tinggi garis */
+  background: white; /* Warna garis putih */
+  border-radius: 2px; /* Membuat garis sedikit melengkung */
 }
 
 /* Bagian utama (konten) */
 section {
-    padding: 30px; /* Ruang di dalam section */
-    margin: 20px auto; /* Jarak atas dan bawah, serta rata tengah */
-    max-width: 900px; /* Lebar maksimum section */
-    background: white; /* Warna latar belakang putih */
-    border-radius: 15px; /* Membuat sudut melengkung */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  padding: 30px; /* Ruang di dalam section */
+  margin: 20px auto; /* Jarak atas dan bawah, serta rata tengah */
+  max-width: 900px; /* Lebar maksimum section */
+  background: white; /* Warna latar belakang putih */
+  border-radius: 15px; /* Membuat sudut melengkung */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
 
 section h2 {
-    text-align: center; /* Teks berada di tengah */
-    font-size: 2em; /* Ukuran teks besar untuk judul */
-    margin-bottom: 20px; /* Jarak bawah */
-    color: #00ffff; /* Warna teks biru */
+  text-align: center; /* Teks berada di tengah */
+  font-size: 2em; /* Ukuran teks besar untuk judul */
+  margin-bottom: 20px; /* Jarak bawah */
+  color: #00ffff; /* Warna teks biru */
 }
 
 /* Gambar profil */
 .profile-pic {
-    display: block; /* Gambar menjadi elemen blok */
-    margin: 0 auto 20px; /* Rata tengah dengan jarak bawah */
-    width: 180px; /* Lebar gambar */
-    height: 180px; /* Tinggi gambar */
-    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
-    border: 4px solid #0b3d91; /* Bingkai biru */
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  display: block; /* Gambar menjadi elemen blok */
+  margin: 0 auto 20px; /* Rata tengah dengan jarak bawah */
+  width: 180px; /* Lebar gambar */
+  height: 180px; /* Tinggi gambar */
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+  border: 4px solid #0b3d91; /* Bingkai biru */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
 }
 
 /* Kontainer proyek */
 .projects-container {
-    display: flex; /* Menyusun elemen secara horizontal */
-    flex-wrap: wrap; /* Membungkus elemen jika ruang tidak cukup */
-    gap: 25px; /* Jarak antar elemen */
-    justify-content: center; /* Menempatkan elemen di tengah */
+  display: flex; /* Menyusun elemen secara horizontal */
+  flex-wrap: wrap; /* Membungkus elemen jika ruang tidak cukup */
+  gap: 25px; /* Jarak antar elemen */
+  justify-content: center; /* Menempatkan elemen di tengah */
 }
 
 /* Kartu proyek */
 .project-card {
-    background: #ff1493; /* Warna latar belakang pink */
-    padding: 20px; /* Ruang di dalam kartu */
-    border-radius: 12px; /* Membuat sudut melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
-    width: 320px; /* Lebar kartu */
-    text-align: center; /* Teks berada di tengah */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
+  background: #ff1493; /* Warna latar belakang pink */
+  padding: 20px; /* Ruang di dalam kartu */
+  border-radius: 12px; /* Membuat sudut melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  width: 320px; /* Lebar kartu */
+  text-align: center; /* Teks berada di tengah */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
 }
 
 .project-card:hover {
-    transform: translateY(-5px); /* Menggeser kartu ke atas saat hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Efek bayangan lebih besar saat hover */
+  transform: translateY(-5px); /* Menggeser kartu ke atas saat hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Efek bayangan lebih besar saat hover */
 }
 
 /* Gambar proyek */
 .project-image {
-    width: 100%; /* Gambar memenuhi lebar kartu */
-    height: auto; /* Tinggi otomatis sesuai proporsi */
-    border-radius: 8px; /* Membuat sudut melengkung */
-    margin-bottom: 15px; /* Jarak bawah gambar */
+  width: 100%; /* Gambar memenuhi lebar kartu */
+  height: auto; /* Tinggi otomatis sesuai proporsi */
+  border-radius: 8px; /* Membuat sudut melengkung */
+  margin-bottom: 15px; /* Jarak bawah gambar */
 }
 
 /* Kontainer kontak */
 .contact-container {
-    display: flex; /* Menyusun elemen secara horizontal */
-    flex-wrap: wrap; /* Membungkus elemen jika ruang tidak cukup */
-    gap: 25px; /* Jarak antar elemen */
-    justify-content: center; /* Menempatkan elemen di tengah */
+  display: flex; /* Menyusun elemen secara horizontal */
+  flex-wrap: wrap; /* Membungkus elemen jika ruang tidak cukup */
+  gap: 25px; /* Jarak antar elemen */
+  justify-content: center; /* Menempatkan elemen di tengah */
 }
 
 /* Kartu kontak */
 .contact-item {
-    display: flex; /* Menyusun elemen secara vertikal */
-    flex-direction: column; /* Teks di bawah ikon */
-    align-items: center; /* Menyelaraskan elemen di tengah */
-    text-align: center; /* Teks berada di tengah */
-    background: linear-gradient(135deg, #ff1493, #00ffff); /* Gradasi warna pink ke biru */
-    padding: 15px; /* Ruang di dalam kartu */
-    border-radius: 10px; /* Membuat sudut melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
-    width: 150px; /* Lebar kartu kontak */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
+  display: flex; /* Menyusun elemen secara vertikal */
+  flex-direction: column; /* Teks di bawah ikon */
+  align-items: center; /* Menyelaraskan elemen di tengah */
+  text-align: center; /* Teks berada di tengah */
+  background: linear-gradient(
+    135deg,
+    #ff1493,
+    #00ffff
+  ); /* Gradasi warna pink ke biru */
+  padding: 15px; /* Ruang di dalam kartu */
+  border-radius: 10px; /* Membuat sudut melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  width: 150px; /* Lebar kartu kontak */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
 }
 
 .contact-item:hover {
-    transform: translateY(-5px); /* Menggeser kartu ke atas saat hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Efek bayangan lebih besar saat hover */
+  transform: translateY(-5px); /* Menggeser kartu ke atas saat hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Efek bayangan lebih besar saat hover */
 }
 
 /* Ikon kontak */
 .contact-icon {
-    width: 60px; /* Ukuran ikon */
-    height: 60px; /* Tinggi ikon */
-    margin-bottom: 10px; /* Jarak bawah ikon */
+  width: 60px; /* Ukuran ikon */
+  height: 60px; /* Tinggi ikon */
+  margin-bottom: 10px; /* Jarak bawah ikon */
 }
 
 .contact-item p {
-    margin: 0; /* Menghilangkan margin default */
-    font-size: 1em; /* Ukuran teks */
-    color: white; /* Warna teks putih */
-    font-weight: bold; /* Teks tebal */
+  margin: 0; /* Menghilangkan margin default */
+  font-size: 1em; /* Ukuran teks */
+  color: white; /* Warna teks putih */
+  font-weight: bold; /* Teks tebal */
+}
+
+/* Bagian keahlian */
+#skills {
+  padding: 30px; /* Ruang di dalam bagian keahlian */
+  background: #f9f9f9; /* Warna latar belakang abu-abu terang */
+  text-align: center; /* Teks berada di tengah */
+}
+
+.skills-container {
+  display: flex; /* Menyusun elemen secara horizontal */
+  flex-wrap: wrap; /* Membungkus elemen jika ruang tidak cukup */
+  justify-content: center; /* Menempatkan elemen di tengah */
+  gap: 20px; /* Jarak antar elemen */
+}
+
+.skill-item {
+  width: 200px; /* Lebar setiap elemen keahlian */
+  text-align: left; /* Teks rata kiri */
+}
+
+.skill-bar {
+  background: #ddd; /* Warna latar belakang progress bar */
+  border-radius: 5px; /* Membuat sudut melengkung */
+  overflow: hidden; /* Menyembunyikan elemen yang keluar dari batas */
+  height: 10px; /* Tinggi progress bar */
+  margin-top: 5px; /* Jarak atas progress bar */
+}
+
+.skill-level {
+  height: 100%; /* Tinggi penuh untuk progress bar */
+  background: linear-gradient(
+    135deg,
+    #00ffff,
+    #ff1493
+  ); /* Gradasi warna biru ke pink */
+  border-radius: 5px; /* Membuat sudut melengkung */
 }
 
 /* Bagian footer */
 footer {
-    text-align: center; /* Teks berada di tengah */
-    padding: 15px; /* Ruang di dalam footer */
-    background: linear-gradient(135deg, #ff1493, #00ffff); /* Gradasi warna pink ke biru */
-    color: white; /* Warna teks putih */
-    margin-top: 30px; /* Jarak atas footer */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  text-align: center; /* Teks berada di tengah */
+  padding: 15px; /* Ruang di dalam footer */
+  background: linear-gradient(
+    135deg,
+    #ff1493,
+    #00ffff
+  ); /* Gradasi warna pink ke biru */
+  color: white; /* Warna teks putih */
+  margin-top: 30px; /* Jarak atas footer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
 }
 
 /* Aturan responsif untuk layar kecil */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2em; /* Ukuran teks lebih kecil untuk layar kecil */
-    }
+  header h1 {
+    font-size: 2em; /* Ukuran teks lebih kecil untuk layar kecil */
+  }
 
-    .nav-links {
-        display: none; /* Sembunyikan menu */
-        flex-direction: column; /* Susun elemen secara vertikal */
-        gap: 15px; /* Jarak antar elemen */
-        background: linear-gradient(135deg, #00ffff, #ff1493); /* Gradasi warna biru ke pink */
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        padding: 15px 0;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
-    }
+  .nav-links {
+    display: none; /* Sembunyikan menu */
+    flex-direction: column; /* Susun elemen secara vertikal */
+    gap: 15px; /* Jarak antar elemen */
+    background: linear-gradient(
+      135deg,
+      #00ffff,
+      #ff1493
+    ); /* Gradasi warna biru ke pink */
+    position: absolute; /* Posisi absolut untuk dropdown */
+    top: 60px; /* Jarak dari atas */
+    left: 0;
+    right: 0;
+    padding: 15px 0; /* Ruang di dalam menu */
+    text-align: center; /* Teks berada di tengah */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  }
 
-    .menu-toggle:checked + .menu-icon + .nav-links {
-        display: flex; /* Tampilkan menu saat tombol diaktifkan */
-    }
+  .menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex; /* Tampilkan menu saat tombol diaktifkan */
+  }
 
-    .menu-icon {
-        display: flex; /* Tampilkan ikon burger */
-    }
+  .menu-icon {
+    display: flex; /* Tampilkan ikon burger */
+  }
 
-    section {
-        padding: 20px; /* Padding lebih kecil untuk layar kecil */
-    }
+  section {
+    padding: 20px; /* Padding lebih kecil untuk layar kecil */
+  }
 
-    .projects-container {
-        flex-direction: column; /* Susun elemen secara vertikal */
-        align-items: center; /* Pusatkan elemen */
-        gap: 20px; /* Jarak antar elemen */
-        padding: 0 15px; /* Tambahkan padding untuk layar kecil */
-    }
+  .projects-container {
+    flex-direction: column; /* Susun elemen secara vertikal */
+    align-items: center; /* Pusatkan elemen */
+    gap: 20px; /* Jarak antar elemen */
+    padding: 0 15px; /* Tambahkan padding untuk layar kecil */
+  }
 
-    .project-card {
-        width: 100%; /* Lebar penuh untuk elemen proyek */
-        max-width: 320px; /* Lebar maksimum */
-        text-align: center; /* Teks berada di tengah */
-    }
+  .project-card {
+    width: 100%; /* Lebar penuh untuk elemen proyek */
+    max-width: 320px; /* Lebar maksimum */
+    text-align: center; /* Teks berada di tengah */
+  }
 
-    .contact-container {
-        flex-direction: column; /* Susun elemen secara vertikal */
-        gap: 15px; /* Jarak antar elemen */
-        align-items: center; /* Pusatkan elemen */
-    }
+  .contact-container {
+    flex-direction: column; /* Susun elemen secara vertikal */
+    gap: 15px; /* Jarak antar elemen */
+    align-items: center; /* Pusatkan elemen */
+  }
 
-    .contact-item {
-        width: 100%; /* Lebar penuh untuk elemen kontak */
-        max-width: 300px; /* Lebar maksimum */
-        text-align: center; /* Teks berada di tengah */
-    }
+  .contact-item {
+    width: 100%; /* Lebar penuh untuk elemen kontak */
+    max-width: 300px; /* Lebar maksimum */
+    text-align: center; /* Teks berada di tengah */
+  }
 
-    .contact-icon {
-        width: 50px; /* Ukuran ikon lebih kecil untuk layar kecil */
-        height: 50px;
-        margin-bottom: 10px; /* Jarak bawah ikon */
-    }
+  .contact-icon {
+    width: 50px; /* Ukuran ikon lebih kecil untuk layar kecil */
+    height: 50px;
+    margin-bottom: 10px; /* Jarak bawah ikon */
+  }
 
-    .contact-item p {
-        font-size: 1em; /* Ukuran teks tetap proporsional */
-    }
+  .contact-item p {
+    font-size: 1em; /* Ukuran teks tetap proporsional */
+  }
 }
