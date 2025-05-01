@@ -1,106 +1,170 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Ari</title>
-  <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS -->
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <h1>Ari Purnomo</h1> <!-- Nama pemilik portofolio -->
-    <p>Web Developer | Tech Enthusiast | Mahasiswa</p> <!-- Deskripsi singkat -->
-  </header>
-
-  <!-- Navigasi -->
-  <nav>
-    <!-- Checkbox untuk toggle menu -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">
-      <!-- Ikon burger menu -->
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Ari</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Menghubungkan file CSS -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Ari Purnomo</h1>
+      <!-- Nama pemilik portofolio -->
+      <p>Web Developer | Tech Enthusiast | Mahasiswa</p>
+      <!-- Deskripsi singkat -->
+    </header>
 
     <!-- Navigasi -->
-    <ul class="nav-links">
-      <li><a href="#about">Tentang Saya</a></li>
-      <li><a href="#projects">Proyek</a></li>
-      <li><a href="#contact">Kontak</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <!-- Checkbox untuk toggle menu -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <!-- Ikon burger menu -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-  <!-- Bagian Tentang Saya -->
-  <section id="about">
-    <h2>Tentang Saya</h2> <!-- Judul bagian -->
-    <img src="arriwae2.jpg" alt="Foto Ari Purnomo" class="profile-pic"> <!-- Foto profil -->
-    <p>
-      Saya adalah seorang mahasiswa yang memiliki minat dalam pengembangan web dan teknologi informasi. Saya telah belajar berbagai bahasa pemrograman dan alat pengembangan seperti HTML, CSS, JavaScript, dan PHP. Saya juga memiliki pengalaman dalam proses pengembangan web sederhana, mulai dari perencanaan hingga implementasi. Selain itu, saya memiliki kemampuan dalam bekerja dengan tim dan berkomunikasi dengan baik.
-    </p>
-    <p>
-      Dibalik minat saya pada teknologi, saya juga tertarik pada dunia otomotif dan sepak bola, di dunia sepak bola saya mendukung tim terbaik di London saat ini yaitu CHELSEA.
-    </p>
-  </section>
+      <!-- Navigasi -->
+      <ul class="nav-links">
+        <li><a href="#about">Tentang Saya</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
 
-  <!-- Bagian Proyek -->
-  <section id="projects">
-    <h2>Proyek</h2> <!-- Judul bagian -->
-    <div class="projects-container">
-      <!-- Kartu Proyek 1 -->
-      <div class="project-card">
-        <img src="pupr.png" alt="Gambar web pupr" class="project-image"> <!-- Gambar proyek -->
-        <h3>Website Klinik Rumah Swadaya Jawa III</h3> <!-- Nama proyek -->
-        <p>Website yang digunakan untuk konsultasi terkait pembangunan rumah.</p> <!-- Deskripsi proyek -->
-      </div>
-      <!-- Kartu Proyek 2 -->
-      <div class="project-card">
-        <img src="warungsrc.png" alt="Gambar web warung" class="project-image"> <!-- Gambar proyek -->
-        <h3>Website Warung Sembako</h3> <!-- Nama proyek -->
-        <p>Website warung sembako yang dapat digunakan untuk belanja kebutuhan sembako dan kebutuhan sehari-hari.</p> <!-- Deskripsi proyek -->
-      </div>
-    </div>
-  </section>
+    <!-- Bagian Tentang Saya -->
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <!-- Judul bagian -->
+      <img src="arriwae2.jpg" alt="Foto Ari Purnomo" class="profile-pic" />
+      <!-- Foto profil -->
+      <p>
+        Saya adalah seorang mahasiswa yang memiliki minat dalam pengembangan web
+        dan teknologi informasi. Saya telah belajar berbagai bahasa pemrograman
+        dan alat pengembangan seperti HTML, CSS, JavaScript, dan PHP. Saya juga
+        memiliki pengalaman dalam proses pengembangan web sederhana, mulai dari
+        perencanaan hingga implementasi.
+      </p>
+      <p>
+        Selain itu, saya tertarik pada dunia otomotif dan sepak bola. Di dunia
+        sepak bola, saya mendukung tim terbaik di London saat ini yaitu CHELSEA.
+      </p>
+    </section>
 
-  <!-- Bagian Kontak -->
-  <section id="contact">
-    <h2>Kontak</h2> <!-- Judul bagian -->
-    <div class="contact-container">
-      <!-- Kontak Email -->
-      <div class="contact-item">
-        <a href="mailto:ari.purnomo@example.com" target="_blank">
-          <img src="email.png" alt="Ikon Email" class="contact-icon"> <!-- Ikon Email -->
-          <p>Email</p>
-        </a>
+    <!-- Bagian Keahlian -->
+    <section id="skills">
+      <h2>Keahlian</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <h3>HTML</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h3>CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h3>PHP</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 60%"></div>
+          </div>
+        </div>
       </div>
-      <!-- Kontak WhatsApp -->
-      <div class="contact-item">
-        <a href="https://wa.me/6281234567890" target="_blank">
-          <img src="wa.png" alt="Ikon WhatsApp" class="contact-icon"> <!-- Ikon WhatsApp -->
-          <p>WhatsApp</p>
-        </a>
-      </div>
-      <!-- Kontak Instagram -->
-      <div class="contact-item">
-        <a href="https://www.instagram.com/arriwae?igsh=MWU2cHU2bG4xdWRueg==" target="_blank">
-          <img src="ig.jpg" alt="Ikon Instagram" class="contact-icon"> <!-- Ikon Instagram -->
-          <p>Instagram</p>
-        </a>
-      </div>
-      <!-- Kontak GitHub -->
-      <div class="contact-item">
-        <a href="https://github.com/username" target="_blank">
-          <img src="github.png" alt="Ikon GitHub" class="contact-icon"> <!-- Ikon GitHub -->
-          <p>GitHub</p>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Ari Purnomo. All rights reserved.</p> <!-- Hak cipta -->
-  </footer>
-</body>
+    <!-- Bagian Proyek -->
+    <section id="projects">
+      <h2>Proyek</h2>
+      <!-- Judul bagian -->
+      <div class="projects-container">
+        <!-- Kartu Proyek 1 -->
+        <div class="project-card">
+          <img src="pupr.png" alt="Gambar web pupr" class="project-image" />
+          <!-- Gambar proyek -->
+          <h3>Website Klinik Rumah Swadaya Jawa III</h3>
+          <!-- Nama proyek -->
+          <p>
+            Website yang digunakan untuk konsultasi terkait pembangunan rumah.
+          </p>
+          <!-- Deskripsi proyek -->
+        </div>
+        <!-- Kartu Proyek 2 -->
+        <div class="project-card">
+          <img
+            src="warungsrc.png"
+            alt="Gambar web warung"
+            class="project-image"
+          />
+          <!-- Gambar proyek -->
+          <h3>Website Warung Sembako</h3>
+          <!-- Nama proyek -->
+          <p>
+            Website warung sembako yang dapat digunakan untuk belanja kebutuhan
+            sembako dan kebutuhan sehari-hari.
+          </p>
+          <!-- Deskripsi proyek -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="contact">
+      <h2>Kontak</h2>
+      <!-- Judul bagian -->
+      <div class="contact-container">
+        <!-- Kontak Email -->
+        <div class="contact-item">
+          <a href="mailto:ari.purnomo@example.com" target="_blank">
+            <img src="email.png" alt="Ikon Email" class="contact-icon" />
+            <!-- Ikon Email -->
+            <p>Email</p>
+          </a>
+        </div>
+        <!-- Kontak WhatsApp -->
+        <div class="contact-item">
+          <a href="https://wa.me/6281234567890" target="_blank">
+            <img src="wa.png" alt="Ikon WhatsApp" class="contact-icon" />
+            <!-- Ikon WhatsApp -->
+            <p>WhatsApp</p>
+          </a>
+        </div>
+        <!-- Kontak Instagram -->
+        <div class="contact-item">
+          <a href="https://www.instagram.com/arriwae" target="_blank">
+            <img src="ig.jpg" alt="Ikon Instagram" class="contact-icon" />
+            <!-- Ikon Instagram -->
+            <p>Instagram</p>
+          </a>
+        </div>
+        <!-- Kontak GitHub -->
+        <div class="contact-item">
+          <a href="https://github.com/username" target="_blank">
+            <img src="github.png" alt="Ikon GitHub" class="contact-icon" />
+            <!-- Ikon GitHub -->
+            <p>GitHub</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Ari Purnomo. All rights reserved.</p>
+      <!-- Hak cipta -->
+    </footer>
+  </body>
 </html>
